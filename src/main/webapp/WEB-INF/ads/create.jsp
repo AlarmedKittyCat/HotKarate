@@ -30,13 +30,13 @@
                     <input id="bathroom appliances" type="checkbox" value="3" name="categories[]">
                     Bathroom Appliances
                 </label>
-                <label for="kitchen appliances">
+                <label for="lighting">
                     <input id="lighting" type="checkbox" value="4" name="categories[]">
                     Lighting
                 </label>
                 <label for="furnishments">
                     <input id="furnishments" type="checkbox" value="5" name="categories[]">
-                    Kitchen Appliances
+                    Furnishments
                 </label>
                 <label for="text books">
                     <input id="text books" type="checkbox" value="6" name="categories[]">
