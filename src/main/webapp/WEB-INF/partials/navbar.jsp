@@ -9,7 +9,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="\">Home</a> <!--Adlister-->
+            <a class="navbar-brand" href="/">Home</a> <!--Adlister-->
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->

@@ -27,6 +27,7 @@
     <div class="ad" id="thirdAd">third ad</div>
 </div>
 </div>
+<jsp:include page="/WEB-INF/partials/footer.jsp"/>
 
 </body>
 </html>
