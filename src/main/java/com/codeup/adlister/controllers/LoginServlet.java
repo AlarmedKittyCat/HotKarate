@@ -27,6 +27,7 @@ public class LoginServlet extends HttpServlet {
         User user = DaoFactory.getUsersDao().findByUsername(username);
 
         if (user == null) {
+            System.out.println("user not found");
             response.sendRedirect("/login");
             return;
         }
@@ -37,6 +38,7 @@ public class LoginServlet extends HttpServlet {
             request.getSession().setAttribute("user", user);
             response.sendRedirect("/profile");
         } else {
+            System.out.println("login information incorrect");
             response.sendRedirect("/login");
         }
     }

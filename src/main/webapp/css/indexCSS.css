@@ -1,0 +1,34 @@
+
+body {
+    background-color: beige;
+}
+.font {
+    font-family: 'Oswald', sans-serif;
+}
+
+.ad {
+    background-color: darkseagreen;
+    width: 200px;
+    height: 200px;
+    margin: 30px;
+    padding: 10px;
+    border-radius: 25px;
+    float: right;
+    box-shadow: 10px 10px 5px #888888;
+    text-align: center;
+
+}
+#firstAd {
+    font-size: 1em;
+
+}
+
+#secondAd {
+    font-size: 1em;
+
+}
+
+#thirdAd {
+    font-size: 1em;
+
+}

@@ -30,6 +30,7 @@ public class RegisterServlet extends HttpServlet {
 
         if (inputHasErrors) {
             response.sendRedirect("/register");
+            System.out.println("unable to register user; please try again");
             return;
         }
 
