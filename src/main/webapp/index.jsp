@@ -18,6 +18,6 @@
     <div class="ad" id="secondAd">second ad</div>
     <div class="ad" id="thirdAd">third ad</div>
 </div>
-
+<jsp:include page="/WEB-INF/partials/footer.jsp"/>
 </body>
 </html>

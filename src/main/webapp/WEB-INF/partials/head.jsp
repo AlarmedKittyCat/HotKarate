@@ -4,6 +4,8 @@
 <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 <link rel="stylesheet" href="../../css/indexCSS.css" type="text/css">
 <link rel="stylesheet" href="../../css/customCSS.css" type="text/css">
+<link rel="stylesheet" href="../../css/footerCSS.css" type="text/css">
+
 
 
 <script
