@@ -1,9 +1,3 @@
-/*html{*/
-    /*font-family: 'DejaVu Sans', Arial, Helvetica, sans-serif;*/
-
-/*}*/
-
-/*.container-fluid{*/
-    /*font-size: 1em;*/
-    /*background-color: blueviolet;*/
-/*}*/
+.container-fluid {
+    font-family: 'Oswald', sans-serif;
+}
