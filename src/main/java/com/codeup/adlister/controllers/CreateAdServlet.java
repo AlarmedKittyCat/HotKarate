@@ -14,6 +14,8 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+import static com.sun.tools.doclets.formats.html.markup.HtmlStyle.title;
+
 @WebServlet(name = "controllers.CreateAdServlet", urlPatterns = "/ads/create")
 public class CreateAdServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -41,6 +43,22 @@ public class CreateAdServlet extends HttpServlet {
             request.getParameter("title"),
             request.getParameter("description")
         );
+
+        String title = "title";
+        if(title.trim().isEmpty()){
+            System.out.println("This field cannot be empty");
+        }else {
+            return;
+        }
+
+        String description = "description";
+        if(description.trim().isEmpty()){
+            System.out.println("This field cannot be empty");
+        }else {
+            return;
+        }
+
+
 
         adId = DaoFactory.getAdsDao().insert(ad);
 
