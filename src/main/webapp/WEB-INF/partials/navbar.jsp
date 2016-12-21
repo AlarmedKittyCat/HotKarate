@@ -9,7 +9,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="">Home</a> <!--Adlister-->
+            <a class="navbar-brand" href="\">Home</a> <!--Adlister-->
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -75,7 +75,7 @@
                 <!--this will only show when the user is LOGGED OUT-->
                 <li><a href="/login">Login</a></li>
                 <!--this will only show when the user is LOGGED IN-->
-                <li><a href="/login">Logout</a></li>
+                <li><a href="/logout">Logout</a></li>
 
             </ul>
         </div><!-- /.navbar-collapse -->

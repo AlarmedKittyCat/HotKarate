@@ -6,13 +6,82 @@ body {
     font-family: 'Oswald', sans-serif;
 }
 
+
+.row {
+    text-align: center;
+    font-size: 5em;
+}
+
+#rowOne {
+    padding-top: 10px;
+    background-color: lightgreen;
+    animation-duration: 2s;
+    animation-name: slidein;
+}
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+#rowTwo {
+    background-color: lightblue;
+    animation-duration: 4s;
+    animation-name: slidein;
+}
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+#rowThree {
+    background-color: lightgoldenrodyellow;
+    animation-duration: 6s;
+    animation-name: slidein;
+}
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+#box {
+    background-color: lightcoral;
+    margin-top: 30%;
+}
+
+#feature {
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
 .ad {
-    background-color: darkseagreen;
+    background-color: floralwhite;
     width: 200px;
     height: 200px;
     margin: 30px;
     padding: 10px;
     border-radius: 25px;
+    float: left;
     box-shadow: 10px 10px 5px #888888;
     text-align: center;
 
