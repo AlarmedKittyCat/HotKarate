@@ -16,12 +16,18 @@ import static java.lang.Integer.parseInt;
 public class AdsIndexServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String id = request.getParameter("id");
+        String category = request.getParameter("category");
         if(id != null) {
             Ad ad = DaoFactory.getAdsDao().getAdById(parseInt(id));
             request.setAttribute("ad", ad);
             request.setAttribute("user", DaoFactory.getUsersDao().findById(ad.getUserId()));
             request.setAttribute("categories", DaoFactory.getCategoriesDao().getStringOfCategories(ad.getId()));
             request.getRequestDispatcher("/WEB-INF/ads/show.jsp").forward(request, response);
+        }
+
+        if(category != null) {
+            request.setAttribute("ads", DaoFactory.getAdsDao().listAllByCategory(category));
+            request.getRequestDispatcher("/WEB-INF/ads/index.jsp").forward(request, response);
         }
 
 
