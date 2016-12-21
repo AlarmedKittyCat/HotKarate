@@ -31,9 +31,11 @@ public class CreateAdServlet extends HttpServlet {
         List<Long> categories = new ArrayList<>();
         String[] category = request.getParameterValues("categories[]");
 
-        for (String categoryString : category) {
-            Long changeToLong = Long.parseLong(categoryString);
-            categories.add(changeToLong);
+        if(request.getParameter("categories[]") != null) {
+            for (String categoryString : category) {
+                Long changeToLong = Long.parseLong(categoryString);
+                categories.add(changeToLong);
+            }
         }
 
         Ad ad = new Ad(
@@ -48,6 +50,8 @@ public class CreateAdServlet extends HttpServlet {
                 adId,
                 categories
         );
+
+        DaoFactory.getCategoriesDao().insert(adCategory);
 
         response.sendRedirect("/ads");
     }
