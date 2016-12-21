@@ -39,6 +39,25 @@ public class MySQLAdsDao implements Ads {
     }
 
     @Override
+    public List<Ad> listAllByCategory(String category) {
+        PreparedStatement stmt = null;
+        String query = " SELECT ads.id, ads.user_id, ads.title, ads.description " +
+                "FROM ad_categories " +
+                "LEFT JOIN ads ON ad_categories.ad_id = ads.id " +
+                "JOIN categories ON ad_categories.category_id = categories.id " +
+                "WHERE category = ?;";
+        try {
+            stmt = connection.prepareStatement(query);
+            stmt.setString(1, category);
+            ResultSet rs = stmt.executeQuery();
+            return createAdsFromResults(rs);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    @Override
     public Ad getAdById(int id) {
         PreparedStatement stmt = null;
         try {
