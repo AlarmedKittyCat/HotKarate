@@ -11,5 +11,7 @@ public interface Ads {
     Long insert(Ad ad);
     Ad getAdById(int id);
     List<Ad> listAllByCategory(String category);
+    void delete(long id);
+    List<Ad> userAds(long userId);
 }
 
