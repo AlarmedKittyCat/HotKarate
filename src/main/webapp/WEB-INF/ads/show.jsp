@@ -10,14 +10,17 @@
 <jsp:include page="/WEB-INF/partials/navbar.jsp" />
 
 <div class="container">
-    <ul class="grid effect-4" id="grid">
-        <li>
+        <div>
             <h2>${ad.title}</h2>
             <p>Posted By: ${user.username}</p>
             <p>${categories}</p>
             <p>${ad.description}</p>
-        </li>
-    </ul>
+        </div>
+    <c:if test="${sessionScope.user.username == user.username}">
+        <form action="/delete?postid=${ad.id}" method="post">
+            <input type="submit" class="btn btn-primary" value="Delete Ad">
+        </form>
+    </c:if>
 </div>
 
 </body>

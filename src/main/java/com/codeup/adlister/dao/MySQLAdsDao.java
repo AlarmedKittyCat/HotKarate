@@ -39,6 +39,20 @@ public class MySQLAdsDao implements Ads {
     }
 
     @Override
+    public List<Ad> userAds(long userId){
+        try {
+            String selectQuery = "SELECT * FROM ads WHERE user_id = ?";
+            PreparedStatement stmt = connection.prepareStatement(selectQuery);
+            stmt.setLong(1, userId);
+            ResultSet rs = stmt.executeQuery();
+            return createAdsFromResults(rs);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    @Override
     public List<Ad> listAllByCategory(String category) {
         PreparedStatement stmt = null;
         String query = " SELECT ads.id, ads.user_id, ads.title, ads.description " +
@@ -87,6 +101,18 @@ public class MySQLAdsDao implements Ads {
             return rs.getLong(1);
         } catch (SQLException e) {
             throw new RuntimeException("Error creating a new ad.", e);
+        }
+    }
+
+    @Override
+    public void delete(long id){
+        try {
+            String deleteQuery = "DELETE FROM ads WHERE id = ?";
+            PreparedStatement stmt = connection.prepareStatement(deleteQuery);
+            stmt.setLong(1, id);
+            stmt.execute();
+        } catch (SQLException e) {
+            e.printStackTrace();
         }
     }
 
