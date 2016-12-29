@@ -16,6 +16,11 @@
             <p>${categories}</p>
             <p>${ad.description}</p>
         </div>
+    <c:if test="${sessionScope.user.username == user.username}">
+        <form action="/delete?postid=${ad.id}" method="post">
+            <input type="submit" class="btn btn-primary" value="Delete Ad">
+        </form>
+    </c:if>
 </div>
 
 </body>
