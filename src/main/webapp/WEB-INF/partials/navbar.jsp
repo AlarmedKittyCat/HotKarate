@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <nav class="navbar navbar-default">
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -16,7 +17,9 @@
                 <li><a href="/ads">Ads <span class="sr-only">(current)</span></a></li>
                 <%--THIS LINK GOES TO THE USERS PROFILE--%>
                     <!--this will only show when the user is LOGGED IN-->
-                <li><a href="/profile">Profile</a></li>
+                <c:if test="${sessionScope.user != null}">
+                    <li><a href="/profile">Profile</a></li>
+                </c:if>
 
                 <%--THIS CATEGORIES DROPDOWN NEEDS TO GO ON
                 <li class="dropdown">
@@ -69,10 +72,16 @@
                         <li><a href="/ads?category=other">Other</a></li>
                     </ul>
                 </li>
-                <!--this will only show when the user is LOGGED OUT-->
-                <li><a href="/login">Login</a></li>
+                <c:choose>
+                    <c:when test="${sessionScope.user != null}">
                 <!--this will only show when the user is LOGGED IN-->
-                <li><a href="/logout">Logout</a></li>
+                        <li><a href="/logout">Logout</a></li>
+                    </c:when>
+                    <c:otherwise>
+                <!--this will only show when the user is LOGGED OUT-->
+                        <li><a href="/login">Login</a></li>
+                    </c:otherwise>
+                </c:choose>
 
             </ul>
         </div><!-- /.navbar-collapse -->
