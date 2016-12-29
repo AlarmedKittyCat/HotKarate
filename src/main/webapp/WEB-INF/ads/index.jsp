@@ -11,19 +11,21 @@
 
 <div class="container">
     <h1>Check out the current ads</h1>
-<ul class="grid effect-4" id="grid">
+
     <c:forEach var="ad" items="${ads}">
-            <li>
+            <div class="boxes">
+                <div class="box-text">
             <h2>${ad.title}</h2>
             <p class="font">${ad.description}</p>
             <p><a href="/ads?id=${ad.id}">Show More</a></p>
-            </li>
+            </div>
+            </div>
     </c:forEach>
 </ul>
 </div>
 <!--
  <script src="../../javascript/index_js.js"></script>
  -->
-
+<jsp:include page="/WEB-INF/partials/footer.jsp"/>
 </body>
 </html>
