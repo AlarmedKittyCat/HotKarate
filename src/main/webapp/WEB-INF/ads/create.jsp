@@ -54,5 +54,10 @@
             <input type="submit" class="btn btn-block btn-primary">
         </form>
     </div>
+
+    <input type="filepicker" data-fp-apikey="AAEMDYxWuSe2Qiyyna39iz"
+           onchange="alert(event.fpfile.url)">
+    <script type="text/javascript" src="//api.filestackapi.com/filestack.js"></script>
+
 </body>
 </html>

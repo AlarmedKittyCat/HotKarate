@@ -6,16 +6,18 @@
         <jsp:param name="title" value="Viewing All The Ads" />
     </jsp:include>
 </head>
-<body>
+<body class="font">
 <jsp:include page="/WEB-INF/partials/navbar.jsp" />
 
 <div class="container">
-        <div class="col-md-6">
+    <ul class="grid effect-4" id="grid">
+        <li>
             <h2>${ad.title}</h2>
             <p>Posted By: ${user.username}</p>
             <p>${categories}</p>
             <p>${ad.description}</p>
-        </div>
+        </li>
+    </ul>
 </div>
 
 </body>
