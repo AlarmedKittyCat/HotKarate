@@ -21,7 +21,6 @@
             </div>
             </div>
     </c:forEach>
-</ul>
 </div>
 <!--
  <script src="../../javascript/index_js.js"></script>
