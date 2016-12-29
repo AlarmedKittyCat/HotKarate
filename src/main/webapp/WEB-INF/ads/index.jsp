@@ -6,20 +6,26 @@
         <jsp:param name="title" value="Viewing All The Ads" />
     </jsp:include>
 </head>
-<body>
+<body class="font">
 <jsp:include page="/WEB-INF/partials/navbar.jsp" />
 
 <div class="container">
-    <h1>Here Are all the ads!</h1>
+    <h1>Check out the current ads</h1>
 
     <c:forEach var="ad" items="${ads}">
-        <div class="col-md-6">
+            <div class="boxes">
+                <div class="box-text">
             <h2>${ad.title}</h2>
             <p class="font">${ad.description}</p>
             <p><a href="/ads?id=${ad.id}">Show More</a></p>
-        </div>
+            </div>
+            </div>
     </c:forEach>
+</ul>
 </div>
-
+<!--
+ <script src="../../javascript/index_js.js"></script>
+ -->
+<jsp:include page="/WEB-INF/partials/footer.jsp"/>
 </body>
 </html>
