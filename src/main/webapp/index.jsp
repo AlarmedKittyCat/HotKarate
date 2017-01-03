@@ -13,19 +13,18 @@
 <div class="container">
     <h1>Buy & Sell Your Shit</h1>
 </div>
-<div class="row" id="rowOne">Buy The Shit You Want</div>
-<div class="row" id="rowTwo">Sell The Shit You Don't Want</div>
-<div class="row" id="rowThree">Be Happy...and shit</div>
+<div class="rows" id="rowOne">Buy The Shit You Want</div>
+<div class="rows" id="rowTwo">Sell The Shit You Don't Want</div>
+<div class="rows" id="rowThree">Be Happy...and shit</div>
 
 <div id="box">
     <div id="feature">
     <h4>Featured Ads</h4>
     </div>
-<div class="container">
+<div class="container front-ad">
     <c:forEach var="ad" items="${ads}">
         <div class="ad">
                 <h2>${ad.title}</h2>
-            <p class="font front-page-ad-text">${ad.description}</p>
             <p><a href="/ads?id=${ad.id}">Show More</a></p>
         </div>
     </c:forEach>

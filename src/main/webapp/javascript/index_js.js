@@ -3,7 +3,7 @@
  */
 
 $(".ad-text").text(function(index, currentText) {
-    return currentText.substr(0, 175) + "...";
+    return currentText.substr(0, 50) + "...";
 });
 
 $(".front-page-ad-text").text(function(index, currentText) {

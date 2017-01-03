@@ -24,5 +24,6 @@
             <input type="submit" class="btn btn-primary btn-block" value="New User? Register Here">
         </form>
     </div>
+    <jsp:include page="/WEB-INF/partials/footer.jsp"/>
 </body>
 </html>
