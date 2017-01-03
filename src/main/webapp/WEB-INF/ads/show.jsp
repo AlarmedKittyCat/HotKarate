@@ -12,7 +12,7 @@
 <div class="container">
         <div class="box-text">
             <h2>${ad.title}</h2>
-            <p>Posted By: ${user.username}</p>
+            <p>Contact Poster ${user.username} at ${user.email}</p>
             <p>${categories}</p>
             <p>${ad.description}</p>
         </div>
