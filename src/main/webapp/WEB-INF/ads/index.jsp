@@ -16,15 +16,14 @@
             <div class="boxes">
                 <div class="box-text">
             <h2>${ad.title}</h2>
-            <p class="font">${ad.description}</p>
+            <p class="font ad-text">${ad.description}</p>
             <p><a href="/ads?id=${ad.id}">Show More</a></p>
             </div>
             </div>
     </c:forEach>
 </div>
-<!--
- <script src="../../javascript/index_js.js"></script>
- -->
+<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+<script src="../../javascript/index_js.js"></script>
 <jsp:include page="/WEB-INF/partials/footer.jsp"/>
 </body>
 </html>

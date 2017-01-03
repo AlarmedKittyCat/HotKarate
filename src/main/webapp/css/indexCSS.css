@@ -102,8 +102,10 @@
 .boxes {
     background-color: #c6e2ff;
     box-shadow: 10px 10px 5px #888888;
+    width: 25%;
     border-radius: 25px;
-    margin-bottom: 3%;
+    margin: 2%;
+    float: left;
 }
 
 .delete-button {
