@@ -89,7 +89,6 @@
     text-align: center;
 
 }
-
 .box-text {
     width: 90%;
     margin: auto;
@@ -99,6 +98,7 @@
     background-color: #c6e2ff;
     box-shadow: 10px 10px 5px #888888;
     border-radius: 25px;
+    margin: .5rem;
 }
 
 /* ads animation
