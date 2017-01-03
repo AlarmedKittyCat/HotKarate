@@ -11,7 +11,7 @@
 
 /* landing page animation */
 
-.row {
+.rows {
     text-align: center;
     font-size: 5em;
 }
@@ -92,6 +92,11 @@
     text-align: center;
 
 }
+
+.front-ads {
+    margin: auto;
+}
+
 /* ads */
 .box-text {
     width: 90%;
