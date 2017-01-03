@@ -10,7 +10,7 @@
 <jsp:include page="/WEB-INF/partials/navbar.jsp" />
 
 <div class="container">
-        <div>
+        <div class="box-text">
             <h2>${ad.title}</h2>
             <p>Posted By: ${user.username}</p>
             <p>${categories}</p>

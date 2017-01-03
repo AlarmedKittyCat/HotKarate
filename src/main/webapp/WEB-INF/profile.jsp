@@ -17,9 +17,11 @@
                         <div class="box-text">
                             <h2>${ad.title}</h2>
                             <p class="font">${ad.description}</p>
+                            <div class="delete-button">
                             <form action="/delete?postid=${ad.id}" method="post">
                                 <input type="submit" class="btn btn-primary" value="Delete Ad">
                             </form>
+                            </div>
                         </div>
                     </div>
             </c:forEach>
