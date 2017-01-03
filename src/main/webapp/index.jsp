@@ -25,7 +25,8 @@
     <c:forEach var="ad" items="${ads}">
         <div class="ad">
                 <h2>${ad.title}</h2>
-                <p><a href="/ads?id=${ad.id}">Show More</a></p>
+            <p class="font front-page-ad-text">${ad.description}</p>
+            <p><a href="/ads?id=${ad.id}">Show More</a></p>
         </div>
     </c:forEach>
 
