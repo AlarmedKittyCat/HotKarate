@@ -10,7 +10,7 @@
 <jsp:include page="/WEB-INF/partials/navbar.jsp" />
 
 <div class="container">
-        <div>
+        <div class="box-text">
             <h2>${ad.title}</h2>
             <p>Posted By: ${user.username}</p>
             <p>${categories}</p>
@@ -18,7 +18,7 @@
         </div>
     <c:if test="${sessionScope.user.username == user.username}">
         <form action="/delete?postid=${ad.id}" method="post">
-            <input type="submit" class="btn btn-primary" value="Delete Ad">
+            <input type="submit" class="btn btn-primary" value="Delete Ad" onclick="return confirm('Are you sure you want to delete this ad?')">
         </form>
     </c:if>
 </div>
