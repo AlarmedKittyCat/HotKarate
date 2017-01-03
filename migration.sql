@@ -40,11 +40,11 @@ CREATE TABLE ad_categories (
 );
 
 INSERT INTO users(username, email, password) VALUES
-  ('user1', 'user@user.com', '$2a$12$RCN0E4JVTXK511xqszTifu.12C8SsxBVKocdDDZWt4mUhTwi6RFwe'),
-  ('user2', 'user@user.com', '$2a$12$RCN0E4JVTXK511xqszTifu.12C8SsxBVKocdDDZWt4mUhTwi6RFwe'),
-  ('user3', 'user@user.com', '$2a$12$RCN0E4JVTXK511xqszTifu.12C8SsxBVKocdDDZWt4mUhTwi6RFwe'),
-  ('user4', 'user@user.com', '$2a$12$RCN0E4JVTXK511xqszTifu.12C8SsxBVKocdDDZWt4mUhTwi6RFwe'),
-  ('user5', 'user@user.com', '$2a$12$RCN0E4JVTXK511xqszTifu.12C8SsxBVKocdDDZWt4mUhTwi6RFwe');
+  ('brad', 'brad@user.com', '$2a$12$RCN0E4JVTXK511xqszTifu.12C8SsxBVKocdDDZWt4mUhTwi6RFwe'),
+  ('britt', 'britt@user.com', '$2a$12$RCN0E4JVTXK511xqszTifu.12C8SsxBVKocdDDZWt4mUhTwi6RFwe'),
+  ('tito', 'tito@user.com', '$2a$12$RCN0E4JVTXK511xqszTifu.12C8SsxBVKocdDDZWt4mUhTwi6RFwe'),
+  ('matt', 'matt@user.com', '$2a$12$RCN0E4JVTXK511xqszTifu.12C8SsxBVKocdDDZWt4mUhTwi6RFwe'),
+  ('paul walker', '2fast2dead@user.com', '$2a$12$RCN0E4JVTXK511xqszTifu.12C8SsxBVKocdDDZWt4mUhTwi6RFwe');
 
 INSERT INTO ads(user_id, title, description) VALUES
   (1, 'Baker for Hire',
