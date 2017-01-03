@@ -47,12 +47,11 @@ public class MySQLCategoriesDao implements Categories {
             PreparedStatement stmt = connection.prepareStatement(query, Statement.RETURN_GENERATED_KEYS);
             stmt.setLong(1, adId);
             ResultSet rs = stmt.executeQuery();
-            if(! rs.next()){
-                adCategories += " Other";
-                return adCategories;
-            }
             while(rs.next()){
                 adCategories += " " + rs.getString(1);
+            }
+            if (adCategories.equals("")){
+                adCategories = "Other";
             }
             return adCategories;
 
