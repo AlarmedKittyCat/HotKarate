@@ -6,5 +6,6 @@
             newsletter of HotKarate, 600 Navarro St #350 | San Antonio, TX 78205 | (210) 802-7289 | www.weRock.com</p>
     </div>
 
+    <script src="../../javascript/index_js.js"></script>
 </footer>
 
