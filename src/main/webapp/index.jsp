@@ -22,9 +22,13 @@
     <h4>Featured Ads</h4>
     </div>
 <div class="container">
-    <div class="ad" id="firstAd">first ad</div>
-    <div class="ad" id="secondAd">second ad</div>
-    <div class="ad" id="thirdAd">third ad</div>
+    <c:forEach var="ad" items="${ads}">
+        <div class="ad">
+                <h2>${ad.title}</h2>
+                <p><a href="/ads?id=${ad.id}">Show More</a></p>
+        </div>
+    </c:forEach>
+
 </div>
 </div>
 <jsp:include page="/WEB-INF/partials/footer.jsp"/>

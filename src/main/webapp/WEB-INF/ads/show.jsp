@@ -18,7 +18,7 @@
         </div>
     <c:if test="${sessionScope.user.username == user.username}">
         <form action="/delete?postid=${ad.id}" method="post">
-            <input type="submit" class="btn btn-primary" value="Delete Ad">
+            <input type="submit" class="btn btn-primary" value="Delete Ad" onclick="return confirm('Are you sure you want to delete this ad?')">
         </form>
     </c:if>
 </div>
